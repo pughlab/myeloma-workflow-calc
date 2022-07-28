@@ -24,7 +24,7 @@ function calculateTotal()
  
   let final_string = ""
   let total = (Number.parseFloat(calc.bmmcs) * Number.parseFloat(calc.cd138)/100).toFixed(2)
-  if (total <= 0) {
+  if (total <= 0 || isNaN(total)) {
     final_string = "Please enter both fields above"
   }
   else if (total < 10000) {
