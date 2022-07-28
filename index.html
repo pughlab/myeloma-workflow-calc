@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+
+    <script src="./js/main.js"></script>
+
+</head>
+  <title>Myeloma Workflow Calc</title></head>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="./public/UHN-removebg-preview.png" width="160" height="33" class="d-inline-block align-top">
+      Myeloma Workflow Calc
+    </a>
+  </nav>
+   <div class="container mt-4">
+      <div class="row">
+        <div class="col-6 row-heading">
+          
+        </div>
+        <div class="col-3 row-heading">
+          <p>Total number of BMMCs</p>
+        </div>
+        <div class="col-3 row-heading">
+          <p>Percentage CD138+ cells</p>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p>Cells in Sample:</p>
+        </div>
+        <div class="col-3">
+          <input type="number" value="0" class="qty" id="qty_bmmcs"/>  
+
+        </div>
+        <div class="col-3">
+          <input type="number" value="0" class="qty" id="qty_cd138" min="0" max="100"/><span>%</span>
+        </div>
+      </div>
+      
+      
+      
+
+      
+      <div class="row my-4">
+        <div class="col-6 text-right">
+         <p>Final Workflow:</p>
+        </div>
+        <div class="col-3" >
+          <p><b>TOTAL:</b></p>
+          <p id="total_value">0</p>
+        </div>
+        
+        <div class="col-3">
+          <p><b>WORKFLOW:</b></p>
+          <p style="color:blue" id="final_string">Please enter both fields above</p>
+        </div>
+      </div>
+      
+    </div>
+
+<body>
+    
+</body>
+</html>
