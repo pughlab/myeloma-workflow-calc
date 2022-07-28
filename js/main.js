@@ -14,7 +14,7 @@ function calculateTotal()
 
  
   let final_string = ""
-  let total = calc.bmmcs * calc.cd138
+  let total = calc.bmmcs * calc.cd138/100
   if (total <= 0) {
     final_string = "Please enter both fields above"
   }
